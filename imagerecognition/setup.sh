@@ -1,11 +1,12 @@
-# Set up absolute path for dataset root here.
-DATA_ROOT='/home/kuan.liu/vision/data/'
+# Set workspace path here.
+WORKSPACE='/'
 
-# Set up absolute path for training logs path here.
-LOGS_DIR='/home/kuan.liu/vision/logs/'
+# Set up absolute path for dataset root here.
+DATA_ROOT="$WORKSPACE/data/"
+LOGS_DIR="$WORKSPACE/logs/"
 
 # Set up absolute path for model save path here.
-SAVE_DIR='/home/kuan.liu/vision/result'
+SAVE_DIR="$WORKSPACE/result"
 
 # Dataset folders.
 CIFAR10_DATA_DIR="$DATA_ROOT/cifar-10"

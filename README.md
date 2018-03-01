@@ -16,11 +16,16 @@ cd MultiplicativeMultimodal/imagerecognition
 ```
 
 ### run experiments
+Vanilla resnet model
 ```bash
-./run_cifar_train.py --dataset [DATASET] --model [MODEL]
+./run_resnet32_example.sh
+```
+Resnet-Mulmix multimodal model
+```bash
+./run_resnet32_mulmix_example.sh
 ```
 Available values for `DATASET` are `cifar-100`.
-Available values for `MODEL` are `resnet-32/110/164`.
+Available values for `MODEL` are `resnet-32/110`.
 
 ## HIGGS
 

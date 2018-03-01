@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """
 Train a CNN on CIFAR.
-Author: Mengye Ren (mren@cs.toronto.edu)
 
 Usage:
 python run_cifar_train.py    --model           [MODEL NAME]          \

@@ -1,6 +1,5 @@
 import time
 date = '-' + str(time.localtime().tm_mon) +'-'+ str(time.localtime().tm_mday)
-# models = ['resnet-32', 'resnet-110', 'resnet-164']
 models = ['resnet-32', 'resnet-110']
 multimodals = [11]
 #names = ['resnet-110']
@@ -101,16 +100,6 @@ for mo in models:
               names.append(('../configs/conf.' + configname, configname))
               cmds.append(cmd_ + _mo_cmd +'--config configs/conf.' + configname)
 
-def gen_cmd0(name):
-  __cmd__ = '#!/bin/bash\n\
-#PBS -q isi -N {}\n\
-#PBS -l walltime=36:00:00\n\
-#PBS -l nodes=1:ppn=8:gpus=1\n\
-source /usr/usc/cuDNN/7.5-v5.1/setup.sh\n\
-source /usr/usc/cuda/8.0/setup.sh\n\
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/usc/cuda/8.0/extras/CUPTI/lib64/\n\n\
-cd /home/nlg-05/xingshi/lstm/tensorflow/recsys/vision\n'.format(name)
-  return __cmd__
 
 N = len(cmds)
 print('there are in total {} commands'.format(N))
