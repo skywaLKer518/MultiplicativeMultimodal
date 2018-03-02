@@ -35,4 +35,16 @@ Available values for `MODEL` are `resnet-32/110`.
 Dataset needs to be downloaded in http://archive.ics.uci.edu/ml/datasets/HIGGS.
 
 ### run experiments 
+Additive combination 
+```bash
+cd example
+./run_jobs_higgs_add.sh
+```
+
+MulMix combination
+```bash
+cd example
+./run_jobs_higgs_mulmix.sh
+```
+
 
