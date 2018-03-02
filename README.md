@@ -32,7 +32,7 @@ Available values for `MODEL` are `resnet-32/110`.
 
 ### Dataset download
 
-Dataset needs to be downloaded in http://archive.ics.uci.edu/ml/datasets/HIGGS.
+Dataset needs to be downloaded in http://archive.ics.uci.edu/ml/datasets/HIGGS. Simple preprocessing (feature normalization) is done in higgs/utils.py.
 
 ### run experiments 
 Additive combination 
